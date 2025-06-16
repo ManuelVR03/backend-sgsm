@@ -10,7 +10,7 @@ public class CorsConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
     	registry.addMapping("/**")
-        .allowedOriginPatterns("http://localhost:8100", "http://192.168.1.137:8100")
+        .allowedOriginPatterns("https://bucolic-nougat-5de4eb.netlify.app")
         .allowedMethods("*")
         .allowedHeaders("*")
         .allowCredentials(true);
